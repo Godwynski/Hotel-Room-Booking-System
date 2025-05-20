@@ -5,15 +5,25 @@ namespace Hotel_Room_Booking_System
 {
     partial class MainForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Panel NavigationBar;
+        private Panel SideBar;
+        private FlowLayoutPanel SideMenuPanel;
+        private Panel MainContentPanel;
+        private Panel MainPanel;
+        private Label lblHotelName;
+        private Label lblWelcomeUser;
+        private PictureBox picUserAvatar;
+        private Button btnBooking;
+        private Button btnCheckIn;
+        private Button btnCheckOut;
+        private Button btnGuests;
+        private Button btnPayments;
+        private Button btnReports;
+        private Button btnSettings;
+        private Panel panelLogo;
+        private PictureBox picLogo;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,254 +33,281 @@ namespace Hotel_Room_Booking_System
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.NavigationBar = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.User = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblWelcomeUser = new System.Windows.Forms.Label();
+            this.picUserAvatar = new System.Windows.Forms.PictureBox();
+            this.lblHotelName = new System.Windows.Forms.Label();
             this.SideBar = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.DashboardBtn = new System.Windows.Forms.Button();
-            this.AssetAssignmentBtn = new System.Windows.Forms.Button();
-            this.AssetReturnBtn = new System.Windows.Forms.Button();
-            this.UserManagementBtn = new System.Windows.Forms.Button();
-            this.AssetManagementBtn = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.SideMenuPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnBooking = new System.Windows.Forms.Button();
+            this.btnCheckIn = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnGuests = new System.Windows.Forms.Button();
+            this.btnPayments = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.MainContentPanel = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.NavigationBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SideBar.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.SideMenuPanel.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.MainContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // NavigationBar
             // 
-            this.NavigationBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.NavigationBar.Controls.Add(this.button6);
-            this.NavigationBar.Controls.Add(this.User);
-            this.NavigationBar.Controls.Add(this.button2);
+            this.NavigationBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(76)))), ((int)(((byte)(114)))));
+            this.NavigationBar.Controls.Add(this.lblWelcomeUser);
+            this.NavigationBar.Controls.Add(this.picUserAvatar);
+            this.NavigationBar.Controls.Add(this.lblHotelName);
             this.NavigationBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.NavigationBar.Location = new System.Drawing.Point(0, 0);
             this.NavigationBar.Name = "NavigationBar";
-            this.NavigationBar.Size = new System.Drawing.Size(1278, 82);
+            this.NavigationBar.Size = new System.Drawing.Size(1280, 80);
             this.NavigationBar.TabIndex = 0;
             // 
-            // button6
+            // lblWelcomeUser
             // 
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(22, 8);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(65, 63);
-            this.button6.TabIndex = 3;
-            this.button6.UseVisualStyleBackColor = false;
+            this.lblWelcomeUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWelcomeUser.AutoSize = true;
+            this.lblWelcomeUser.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblWelcomeUser.ForeColor = System.Drawing.Color.White;
+            this.lblWelcomeUser.Location = new System.Drawing.Point(1040, 30);
+            this.lblWelcomeUser.Name = "lblWelcomeUser";
+            this.lblWelcomeUser.Size = new System.Drawing.Size(120, 19);
+            this.lblWelcomeUser.TabIndex = 2;
+            this.lblWelcomeUser.Text = "Welcome, Admin!";
             // 
-            // User
+            // picUserAvatar
             // 
-            this.User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.User.BackColor = System.Drawing.Color.Transparent;
-            this.User.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.User.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.User.FlatAppearance.BorderSize = 0;
-            this.User.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.User.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.User.Location = new System.Drawing.Point(1206, 12);
-            this.User.Name = "User";
-            this.User.Size = new System.Drawing.Size(60, 56);
-            this.User.TabIndex = 2;
-            this.User.UseVisualStyleBackColor = false;
+            this.picUserAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picUserAvatar.Location = new System.Drawing.Point(1180, 15);
+            this.picUserAvatar.Name = "picUserAvatar";
+            this.picUserAvatar.Size = new System.Drawing.Size(50, 50);
+            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserAvatar.TabIndex = 1;
+            this.picUserAvatar.TabStop = false;
             // 
-            // button2
+            // lblHotelName
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(98, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(386, 67);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.lblHotelName.AutoSize = true;
+            this.lblHotelName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHotelName.ForeColor = System.Drawing.Color.White;
+            this.lblHotelName.Location = new System.Drawing.Point(20, 20);
+            this.lblHotelName.Name = "lblHotelName";
+            this.lblHotelName.Size = new System.Drawing.Size(249, 32);
+            this.lblHotelName.TabIndex = 0;
+            this.lblHotelName.Text = "Gadz Hotel Booking ";
             // 
             // SideBar
             // 
-            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.SideBar.Controls.Add(this.flowLayoutPanel1);
+            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(105)))), ((int)(((byte)(122)))));
+            this.SideBar.Controls.Add(this.SideMenuPanel);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SideBar.Location = new System.Drawing.Point(0, 82);
+            this.SideBar.Location = new System.Drawing.Point(0, 80);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(231, 647);
+            this.SideBar.Size = new System.Drawing.Size(250, 700);
             this.SideBar.TabIndex = 1;
             // 
-            // flowLayoutPanel1
+            // SideMenuPanel
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(220)))));
-            this.flowLayoutPanel1.Controls.Add(this.DashboardBtn);
-            this.flowLayoutPanel1.Controls.Add(this.AssetAssignmentBtn);
-            this.flowLayoutPanel1.Controls.Add(this.AssetReturnBtn);
-            this.flowLayoutPanel1.Controls.Add(this.UserManagementBtn);
-            this.flowLayoutPanel1.Controls.Add(this.AssetManagementBtn);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(231, 647);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.SideMenuPanel.BackColor = System.Drawing.Color.Transparent;
+            this.SideMenuPanel.Controls.Add(this.panelLogo);
+            this.SideMenuPanel.Controls.Add(this.btnBooking);
+            this.SideMenuPanel.Controls.Add(this.btnCheckIn);
+            this.SideMenuPanel.Controls.Add(this.btnCheckOut);
+            this.SideMenuPanel.Controls.Add(this.btnGuests);
+            this.SideMenuPanel.Controls.Add(this.btnPayments);
+            this.SideMenuPanel.Controls.Add(this.btnReports);
+            this.SideMenuPanel.Controls.Add(this.btnSettings);
+            this.SideMenuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SideMenuPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.SideMenuPanel.Location = new System.Drawing.Point(0, 0);
+            this.SideMenuPanel.Name = "SideMenuPanel";
+            this.SideMenuPanel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.SideMenuPanel.Size = new System.Drawing.Size(250, 700);
+            this.SideMenuPanel.TabIndex = 0;
             // 
-            // DashboardBtn
+            // panelLogo
             // 
-            this.DashboardBtn.BackColor = System.Drawing.Color.Transparent;
-            this.DashboardBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DashboardBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DashboardBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.DashboardBtn.FlatAppearance.BorderSize = 0;
-            this.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DashboardBtn.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold);
-            this.DashboardBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.DashboardBtn.Location = new System.Drawing.Point(15, 15);
-            this.DashboardBtn.Margin = new System.Windows.Forms.Padding(15);
-            this.DashboardBtn.Name = "DashboardBtn";
-            this.DashboardBtn.Size = new System.Drawing.Size(207, 62);
-            this.DashboardBtn.TabIndex = 2;
-            this.DashboardBtn.Text = "Booking";
-            this.DashboardBtn.UseVisualStyleBackColor = false;
+            this.panelLogo.Controls.Add(this.picLogo);
+            this.panelLogo.Location = new System.Drawing.Point(3, 3);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(244, 100);
+            this.panelLogo.TabIndex = 0;
             // 
-            // AssetAssignmentBtn
+            // picLogo
             // 
-            this.AssetAssignmentBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AssetAssignmentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AssetAssignmentBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AssetAssignmentBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetAssignmentBtn.FlatAppearance.BorderSize = 0;
-            this.AssetAssignmentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AssetAssignmentBtn.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold);
-            this.AssetAssignmentBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetAssignmentBtn.Location = new System.Drawing.Point(15, 107);
-            this.AssetAssignmentBtn.Margin = new System.Windows.Forms.Padding(15);
-            this.AssetAssignmentBtn.Name = "AssetAssignmentBtn";
-            this.AssetAssignmentBtn.Size = new System.Drawing.Size(207, 62);
-            this.AssetAssignmentBtn.TabIndex = 0;
-            this.AssetAssignmentBtn.Text = "Check-In";
-            this.AssetAssignmentBtn.UseVisualStyleBackColor = false;
+            this.picLogo.Location = new System.Drawing.Point(50, 10);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(150, 80);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
-            // AssetReturnBtn
+            // btnBooking
             // 
-            this.AssetReturnBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AssetReturnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AssetReturnBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AssetReturnBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetReturnBtn.FlatAppearance.BorderSize = 0;
-            this.AssetReturnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AssetReturnBtn.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold);
-            this.AssetReturnBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetReturnBtn.Location = new System.Drawing.Point(15, 199);
-            this.AssetReturnBtn.Margin = new System.Windows.Forms.Padding(15);
-            this.AssetReturnBtn.Name = "AssetReturnBtn";
-            this.AssetReturnBtn.Size = new System.Drawing.Size(207, 62);
-            this.AssetReturnBtn.TabIndex = 5;
-            this.AssetReturnBtn.Text = "Check-Out";
-            this.AssetReturnBtn.UseVisualStyleBackColor = false;
+            this.btnBooking.BackColor = System.Drawing.Color.Transparent;
+            this.btnBooking.FlatAppearance.BorderSize = 0;
+            this.btnBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooking.Location = new System.Drawing.Point(3, 109);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(244, 50);
+            this.btnBooking.TabIndex = 1;
+            this.btnBooking.Text = "   Room Booking";
+            this.btnBooking.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBooking.UseVisualStyleBackColor = false;
             // 
-            // UserManagementBtn
+            // btnCheckIn
             // 
-            this.UserManagementBtn.BackColor = System.Drawing.Color.Transparent;
-            this.UserManagementBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.UserManagementBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UserManagementBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.UserManagementBtn.FlatAppearance.BorderSize = 0;
-            this.UserManagementBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserManagementBtn.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold);
-            this.UserManagementBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.UserManagementBtn.Location = new System.Drawing.Point(15, 291);
-            this.UserManagementBtn.Margin = new System.Windows.Forms.Padding(15);
-            this.UserManagementBtn.Name = "UserManagementBtn";
-            this.UserManagementBtn.Size = new System.Drawing.Size(207, 62);
-            this.UserManagementBtn.TabIndex = 4;
-            this.UserManagementBtn.Text = "Guests";
-            this.UserManagementBtn.UseVisualStyleBackColor = false;
+            this.btnCheckIn.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckIn.FlatAppearance.BorderSize = 0;
+            this.btnCheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckIn.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCheckIn.ForeColor = System.Drawing.Color.White;
+            this.btnCheckIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckIn.Location = new System.Drawing.Point(3, 165);
+            this.btnCheckIn.Name = "btnCheckIn";
+            this.btnCheckIn.Size = new System.Drawing.Size(244, 50);
+            this.btnCheckIn.TabIndex = 2;
+            this.btnCheckIn.Text = "   Guest Check-In";
+            this.btnCheckIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCheckIn.UseVisualStyleBackColor = false;
             // 
-            // AssetManagementBtn
+            // btnCheckOut
             // 
-            this.AssetManagementBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AssetManagementBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AssetManagementBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AssetManagementBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetManagementBtn.FlatAppearance.BorderSize = 0;
-            this.AssetManagementBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AssetManagementBtn.Font = new System.Drawing.Font("Berlin Sans FB Demi", 12F, System.Drawing.FontStyle.Bold);
-            this.AssetManagementBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(79)))), ((int)(((byte)(129)))));
-            this.AssetManagementBtn.Location = new System.Drawing.Point(15, 383);
-            this.AssetManagementBtn.Margin = new System.Windows.Forms.Padding(15);
-            this.AssetManagementBtn.Name = "AssetManagementBtn";
-            this.AssetManagementBtn.Size = new System.Drawing.Size(207, 62);
-            this.AssetManagementBtn.TabIndex = 1;
-            this.AssetManagementBtn.Text = "Payments";
-            this.AssetManagementBtn.UseVisualStyleBackColor = false;
+            this.btnCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckOut.FlatAppearance.BorderSize = 0;
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckOut.Location = new System.Drawing.Point(3, 221);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(244, 50);
+            this.btnCheckOut.TabIndex = 3;
+            this.btnCheckOut.Text = "   Guest Check-Out";
+            this.btnCheckOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCheckOut.UseVisualStyleBackColor = false;
             // 
-            // panel8
+            // btnGuests
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(220)))));
-            this.panel8.Controls.Add(this.MainPanel);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(231, 82);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1047, 647);
-            this.panel8.TabIndex = 3;
+            this.btnGuests.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuests.FlatAppearance.BorderSize = 0;
+            this.btnGuests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuests.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnGuests.ForeColor = System.Drawing.Color.White;
+            this.btnGuests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuests.Location = new System.Drawing.Point(3, 277);
+            this.btnGuests.Name = "btnGuests";
+            this.btnGuests.Size = new System.Drawing.Size(244, 50);
+            this.btnGuests.TabIndex = 4;
+            this.btnGuests.Text = "   Guest Management";
+            this.btnGuests.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuests.UseVisualStyleBackColor = false;
+            // 
+            // btnPayments
+            // 
+            this.btnPayments.BackColor = System.Drawing.Color.Transparent;
+            this.btnPayments.FlatAppearance.BorderSize = 0;
+            this.btnPayments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayments.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnPayments.ForeColor = System.Drawing.Color.White;
+            this.btnPayments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPayments.Location = new System.Drawing.Point(3, 333);
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.Size = new System.Drawing.Size(244, 50);
+            this.btnPayments.TabIndex = 5;
+            this.btnPayments.Text = "   Payments";
+            this.btnPayments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPayments.UseVisualStyleBackColor = false;
+            // 
+            // btnReports
+            // 
+            this.btnReports.BackColor = System.Drawing.Color.Transparent;
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnReports.ForeColor = System.Drawing.Color.White;
+            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReports.Location = new System.Drawing.Point(3, 389);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(244, 50);
+            this.btnReports.TabIndex = 6;
+            this.btnReports.Text = "   Reports";
+            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReports.UseVisualStyleBackColor = false;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(3, 445);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(244, 50);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "   Settings";
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            // 
+            // MainContentPanel
+            // 
+            this.MainContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.MainContentPanel.Controls.Add(this.MainPanel);
+            this.MainContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainContentPanel.Location = new System.Drawing.Point(250, 80);
+            this.MainContentPanel.Name = "MainContentPanel";
+            this.MainContentPanel.Padding = new System.Windows.Forms.Padding(20);
+            this.MainContentPanel.Size = new System.Drawing.Size(1030, 700);
+            this.MainContentPanel.TabIndex = 2;
             // 
             // MainPanel
             // 
-            this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.MainPanel.BackColor = System.Drawing.Color.White;
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Location = new System.Drawing.Point(20, 20);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1047, 647);
-            this.MainPanel.TabIndex = 3;
+            this.MainPanel.Size = new System.Drawing.Size(990, 660);
+            this.MainPanel.TabIndex = 0;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(1278, 729);
-            this.Controls.Add(this.panel8);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1280, 780);
+            this.Controls.Add(this.MainContentPanel);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.NavigationBar);
-            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "MainForm";
-            this.Text = "Office Asset Management";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Grand Horizon Resort - Booking System";
             this.NavigationBar.ResumeLayout(false);
+            this.NavigationBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
             this.SideBar.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.SideMenuPanel.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.MainContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
-
-        #endregion
-
-        private Panel NavigationBar;
-        private Panel SideBar;
-        private Button DashboardBtn;
-        private Button button2;
-        private Button AssetAssignmentBtn;
-        private Button AssetManagementBtn;
-        private Button User;
-        private Button UserManagementBtn;
-        private Button button6;
-        private Panel panel8;
-        private Panel MainPanel;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Button AssetReturnBtn;
     }
 }
-
