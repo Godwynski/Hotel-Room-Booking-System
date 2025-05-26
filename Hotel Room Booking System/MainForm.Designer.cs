@@ -10,7 +10,6 @@ namespace Hotel_Room_Booking_System
         private Panel SideBar;
         private FlowLayoutPanel SideMenuPanel;
         private Panel MainContentPanel;
-        private Panel MainPanel;
         private Label lblHotelName;
         private Label lblWelcomeUser;
         private PictureBox picUserAvatar;
@@ -51,14 +50,12 @@ namespace Hotel_Room_Booking_System
             this.btnReports = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.MainContentPanel = new System.Windows.Forms.Panel();
-            this.MainPanel = new System.Windows.Forms.Panel();
             this.NavigationBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SideBar.SuspendLayout();
             this.SideMenuPanel.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.MainContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // NavigationBar
@@ -102,9 +99,9 @@ namespace Hotel_Room_Booking_System
             this.lblHotelName.ForeColor = System.Drawing.Color.White;
             this.lblHotelName.Location = new System.Drawing.Point(20, 20);
             this.lblHotelName.Name = "lblHotelName";
-            this.lblHotelName.Size = new System.Drawing.Size(249, 32);
+            this.lblHotelName.Size = new System.Drawing.Size(131, 32);
             this.lblHotelName.TabIndex = 0;
-            this.lblHotelName.Text = "Gadz Hotel Booking ";
+            this.lblHotelName.Text = "RoomEase";
             // 
             // SideBar
             // 
@@ -267,22 +264,12 @@ namespace Hotel_Room_Booking_System
             // MainContentPanel
             // 
             this.MainContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.MainContentPanel.Controls.Add(this.MainPanel);
             this.MainContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainContentPanel.Location = new System.Drawing.Point(250, 80);
             this.MainContentPanel.Name = "MainContentPanel";
             this.MainContentPanel.Padding = new System.Windows.Forms.Padding(20);
             this.MainContentPanel.Size = new System.Drawing.Size(1030, 700);
             this.MainContentPanel.TabIndex = 2;
-            // 
-            // MainPanel
-            // 
-            this.MainPanel.BackColor = System.Drawing.Color.White;
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(20, 20);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(990, 660);
-            this.MainPanel.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -305,7 +292,6 @@ namespace Hotel_Room_Booking_System
             this.SideMenuPanel.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.MainContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
